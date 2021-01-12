@@ -1,0 +1,72 @@
+/*Diseñando la plantilla principal de la página con GRID*/
+
+#grid-main-container{
+  
+    /*Aplicando grid al contenedor pirncipal*/
+    display: grid;
+    /*Plantilla de la página principal*/
+    grid-template-areas: 
+    "nav nav nav nav"
+    "main main main main"
+    "blog blog blog blog"
+    "footer footer footer footer"
+     ;
+
+     /*Aplicando el tamaño de las columnas de la plantilla*/
+    grid-template-columns: 25% 25% 25% 25% ;
+     
+}
+
+/*Unir el elemento HTML "nav" con la plantilla de la página principal*/
+#nav{
+    grid-area: nav;
+    
+}
+
+
+/*Unir el elemento HTML "main" con la plantilla de la página principal*/
+#main{
+    grid-area: main;
+}
+
+
+/*Unir el elemento HTML "footer" con la plantilla de la página principal*/
+
+#footer{
+    grid-area: footer;
+}
+
+
+/*Unir el elemento HTML "blog" con la plantilla de la página principal*/
+#blog{
+    
+    grid-area: blog;
+    display: grid;
+    grid-template-areas: 
+    ". cur frases cons1 ."
+    ". cur frases cons1 ."
+    ". cur frases cons2 ."
+    ". cur frases cons2 ."
+    ;
+    grid-template-columns:  2% 33% 33% 30% 2%;
+    grid-gap: 10px;
+}
+
+#cur{
+    grid-area: cur;
+}
+
+#frases{
+    grid-area: frases;
+}
+
+#cons1{
+    grid-area: cons1;
+}
+
+#cons2{
+    grid-area: cons2;
+}
+
+
+

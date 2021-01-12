@@ -1,0 +1,49 @@
+#form{
+
+    width: 80%;
+    /*Flex para trabajar con el formulario*/
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 30px;
+    background-color: #4b774a;
+   
+    
+}
+
+input[type="submit"]{
+
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+    
+}
+
+
+label{
+    
+    padding-top: 5px;
+    
+}
+/*Cambindo plantilla principal*/
+#grid-main-container{
+  
+    /*Aplicando grid al contenedor pirncipal*/
+    display: grid;
+    /*Plantilla de la página principal*/
+    grid-template-areas: 
+    "nav nav nav nav"
+    ". form form ."
+    "footer footer footer footer"
+     ;
+
+     /*Aplicando el tamaño de las columnas de la plantilla*/
+    grid-template-columns: 25% 25% 25% 25% ;
+     
+}
+
+#form{
+    grid-area: form;
+}

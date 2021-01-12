@@ -1,0 +1,40 @@
+#mainTitle{
+    display:flex;
+    justify-content: center;
+    
+    
+}
+
+/*Aplicando Flexbox en el navegador*/
+
+#nav{
+    /*Aplicando flex*/
+     display: inline-flex;
+    /*Alineando el contendio del menú de navegación */
+    align-content: center;
+
+
+}
+
+#navList{
+    /*Aplicando alineado con flex*/
+    display: inline-flex;
+}
+
+#contacto{
+    display: flex;
+
+}
+
+.blogEntry{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+}
+
+
+
+

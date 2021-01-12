@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+
+
+* {
+    /*Cambiando estilos de letra*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    /*Fijando la cabecera*/
+    position: sticky;
+    /*Limitando a 0 la distancia a la parte superior de la página*/
+    top: 0;
+    /*Ancho máximo*/
+    width: 100%;
+    /*Centrado sobre el total de la página*/
+    text-align: center;
+    /*Relleno superior*/
+    padding-top: 20px;
+    /*Fondo para evitar porblemas con el scroll*/
+    background-color: white;
+    /*Alto del logo*/
+    height: 60px;
+    /*Tipo de fuente*/
+    font-family: 'Damion', cursive;
+    /*Tamaño de fuente*/
+    font-size: 40px;
+
+
+}
+
+#mainContainer {
+    /*Aplicando flexbox*/
+    display: flex;
+    /*Ordenado elementos interiores en fila*/
+    flex-direction: row;
+    /*Margen superior con respecto al logo*/
+    margin-top: 10px;
+    /*Alineando items desde el final*/
+    justify-content: flex-end;
+}
+
+#flexContainer {
+    /*Anchura del maximo del padre*/
+    width: 100%;
+    /*Aplicando flexbox*/
+    display: flex;
+    /*Elementos del contenedor en columnas y no en filas*/
+    flex-direction: column;
+}
+
+.row {
+    /*Aplicando flexbox*/
+    display: flex;
+    /*Ordenado elementos interiores en fila*/
+    flex-direction: row;
+    /*Haciendo que los elementos interiores ocupen el espacio interior uniformemente (repartiendolo)*/
+    justify-content: space-around;
+    /*Ancho del total del contenedor*/
+    width: 100%;
+    /*Alineando items desde el final*/
+    align-items: flex-end;
+    /*Margen con el contenedor superior*/
+    margin-bottom: 40px;
+
+
+}
+
+.row img{
+    /*Tamaño de la imágen*/
+    width: 400px;
+    height: 300px;
+}
+
+footer{
+    /*Margen superior con el resto del contenido*/
+    margin-top: 70px;
+    /*Alieando el texto al centro de la página (width 100% al no estar en otro contenedor)*/
+    text-align: center;
+    /*Margen con el límite del navegador*/
+    margin-bottom: 40px;
+}
+
+.mainparagraph{
+    /*Margen superior para ajustar con las imágenes*/
+    margin-top: 70px;
+    /*Texto justificado, es decir, encuadrado*/
+    text-align: justify;
+    /*Ocupa un ancho del 30% del contenedor*/
+    width: 30%;
+}
+
+nav {
+    /*Ancho del navegador*/
+    width: 10%;
+    /*Fijando el navegador para que al hacer scroll no baje*/
+    position: sticky;
+    /*Relleno para que al hacer scroll no quede muy pegado a la parte superior*/
+    padding-top: 60px;
+
+
+
+
+}
+
+nav ul {
+    /*Aplicando sobriedad a la lista aumentando la cohesion con el resto de la página*/
+    list-style: none;
+}
+
+nav ul li {
+    /*Margen entre elementos de la lista*/
+    margin-bottom: 20px;
+    /*Tamaño de fuente*/
+    font-size: 23px;
+}
+
+.links {
+    /*Aplicando sobriedad a la lista aumentando la cohesion con el resto de la página*/
+    text-decoration: none;
+    /*Color negro para evitar el azul de los links*/
+    color: black;
+}
+
+.links:hover {
+    /*Color al pasar el ratón para diferenciar*/
+    color: red;
+}
+
+/*Productos*/
+
+.columns{
+    /*Ancho total relativo al contenedor*/
+    width: 80%;
+    /*Aplicando flexbox*/
+    display: flex;
+    /*Elementos del contenedor en columnas y no en filas*/
+    flex-direction: column;
+
+}
+
+.products{
+    /*Ancho total relativo al contenedor*/
+    width: 100%;
+    /*Aplicando flexbox*/
+    display: flex;
+    /*Ordenado elementos interiores en fila*/
+    flex-direction: row;
+    /*Centrando el contenido*/
+    justify-content: center;
+}
+
+.product{
+    /*Tamaño respecto al contenedor de cada producto*/
+    width: 25%;
+    /*Alineando los textos del div*/
+    text-align: center;
+    /*Margen en todas las direcciones de 20px para separar productos*/
+    margin: 20px;
+
+
+}
+
+.product > img{
+    /*Tamaño y márgenes de las imágenes, que se muestren como bloque para centrarlas*/
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: auto;
+}
+
+.product > p{
+    /*Texto justificado, es decir, encuadrado*/
+    text-align: justify;
+    /*Relleno en todas las direcciones para separar el texto*/
+    padding: 10px;
+}
+
+/*Form*/
+ .form{
+     /*Tamaño del formulario respecto a su padre*/
+     width: 50%;
+     /*Centrando el formulario respecto a su padre*/
+     margin: auto;
+     /*Alineando los labels del form*/
+     text-align: center;
+     /*Relleno a la izquierda para centrarlo un poco con respecto al titulo*/
+     padding-left: 20px;
+ }
+
+ form{
+     display: flex;
+
+     flex-direction: column;
+
+ }
+
+ form input{
+    /*Margen inferior a cada input para separarlos*/
+     margin-bottom: 2%;
+ }
+
+ form label{
+     /*Margen inferior entre cada etiqueta para separarlo de su input (no tanto como cada input de la etiqueta siguiente)*/
+     margin-bottom: 2px;
+ }
+
+ form input[type="submit"]{
+     /*Centrando boton de enviar*/
+     width: 100px;
+    margin: auto;
+ }
+
+ #sobreNosotros{
+     /*Centrando y dando tamaño al párrafo*/
+     margin: auto;
+     width: 50%;
+
+     text-align: justify;
+     /*Separando las lineas entre cada párrafo ( estilo minimalista, facilidad lectura)*/
+     line-height: 40px;
+
+ }
+
+ #sobreNosotros p{
+     /*Intentando centrar respecto al título*/
+     padding-left: 90px;
+ }
+

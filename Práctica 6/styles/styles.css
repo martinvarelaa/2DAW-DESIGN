@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
+
+*{
+   font-family: 'Montserrat', sans-serif;;
+
+
+}
+
+#main{
+    /*Tamaño minimo para mantener la estetica*/
+    min-height: 500px;
+    /*Fondo de la section*/
+    background-image: url("../assets/img/fondo.jpg");
+    /*Color de texto blanco*/
+    color: white;
+}
+
+
+/*Trabajando sobre los márgenes del navegador*/
+
+#nav{
+    /*Color de fondo*/
+    background-color: #4b774a;
+}
+
+.navListItem{
+    /*Padding entre los items de la lista*/
+    padding: 5px;
+    /*Sin estilos*/
+    list-style: none;
+}
+
+#navList{
+    width: 80%;
+    /*Retocando alineado de la lista de navegación con el título*/
+    line-height: 38px;
+    /*Quitando los etilos por defecto de HTML*/
+    list-style: none;
+}
+
+#contacto{
+    line-height: 38px;
+}
+
+#navTitle{
+    /*Separando el título del borde del navegador*/
+    margin-left: 15px;
+}
+
+/*Aplicando estilos directamente sobe la imágen del main*/
+#background{
+    /*Ocupa el máximo de espacio en el contenedor*/
+    width: 100%;
+}
+
+/*---------------------------------------------------------------------------------*/
+/*Trabajando con el blog*/
+
+
+#blog{
+    /*Margen superior para separarlo de la imágen*/
+    margin-top: 10px;
+    /*Color de fondo*/
+    background-color: lightgray;
+    /*Separación por debajo*/
+    padding-bottom: 25px;
+
+}
+
+.blogEntry{
+    /*Color de fondo*/
+    background-color: grey;
+}
+
+.blogEntry_textContainer{
+    
+    padding: 5px;
+}
+
+
+
+.blogEntry_title{
+    color: #4b774a;
+    text-align: center;
+    justify-content: center;
+}
+
+.blogEntry_photo{
+    /*Indicamos tamaño*/
+    width: 100%;
+    
+}
+
+#cons1{
+    /*Padding a la primera foto*/
+    padding: 10px;
+}
+#cons2{
+    /*Padding a la segunda foto*/
+    padding: 10px;
+}
+.blogEntry_button{
+    /*Indicamos tamaño*/
+    width: 100px;
+    /*Color de fondo*/
+    background-color: black;
+    /*Alineando texto*/
+    text-align: center;
+    /*Color del texto del botón*/
+    color: white;
+    /*Haciendo que el botón parezca mas grande*/
+    padding: 10px;
+    /*Margen para los botones*/
+    margin: 20px;
+}
+
+/*---------------------------------------------------------------------------------*/
+/*Trabajando con el footer*/
+
+
+#footer{
+    /*Color de fondo*/
+    background-color: #4b774a;
+     /*Alineado*/
+     text-align: center;
+     /*Separación*/
+     padding: 10px;
+}
+
+
+
+
+
+

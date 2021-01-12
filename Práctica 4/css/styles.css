@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
+/* Importando fuente de Google Fonts */
+
+* {
+    font-family: 'Lato', sans-serif;
+    /*Cambio global de fuente*/
+}
+
+body {
+    background-image: url("../img/gray_jean.png");
+    /* Cambiando el fondo del body */
+}
+
+/* ---------------------------------------------------------- PÁGINA PRINCIPAL ----------------------------------------------------------------------------------------- */
+#flexNav {
+
+    margin-right: 1%;
+    margin-left: 1%;
+    /* Añadiendo márgenes laterales al navegador */
+    position: fixed;
+    /* Fijando el navegador a la parte superior */
+    width: 100%;
+    /* Asignando el tamaño del navegador (todo el ancho) */
+    height: 100px;
+    /*Asignando altura fija al navegador  */
+    top: 0;
+    left: 0;
+    /* Posicionando el navegador a la esquina superior izquierda */
+    display: flex;
+    /* Disposición de contenedor flexible */
+    flex-direction: row;
+    /* Establecemos la dirección que van a tomar los elementos */
+    justify-content: space-between;
+    /* Modificamos el comportamiento de los bloques contenidos, para que dejen espacio entre ellos teniendo en cuenta sus tamaños, cuanto menos ocupen, más distanciados estarán en este caso */
+    background-image: url(../img/gray_jean.png);
+    /* Background en el nav para evitar que no se vea bien cuando se pone encima del texto */
+}
+
+#flexNav h1 {
+
+    font-size: 45px;
+    /* Cambiando tamaño de letra */
+    font-family: 'Chilanka', cursive;
+    /* Cambiando tipo de letra */
+    align-self: center;
+    /* Centrando el elemento respecto a su padre (nav) */
+    width: 20%;
+    /* Añadiendo ancho al logotipo */
+    margin-left: 1%;
+    /* Margen a la izquierda para que no se vea muy pegado */
+}
+
+#flexNav ul {
+
+    display: inline-flex;
+    /* Mostar elementos en línea */
+    list-style: none;
+    /* Quitar los puntos de la lista desordenada, añadiendo sobriedad */
+    align-self: center;
+    /* Centrando el elemento respecto a su padre (nav) */
+    font-size: 24px;
+    /* Cambiando tamaño de letra */
+    font-family: 'Chilanka', cursive;
+    /* Cambiando tipo de letra */
+    width: 40%;
+    /* Añadiendo ancho a la lista de navegación  */
+    flex-wrap: wrap;
+    /* Establecemos el comportamiento cuando no quepan más, en este caso se apilarán (no queda bonito (nada bonito), pero al menos se muestran todos los menús y la página sigue siendo funcional) */
+
+}
+
+#flexNav ul li {
+
+    margin-right: 15%;
+    /* Margen a la derecha para la separación de cada elemento */
+
+
+}
+
+#flexNav ul li a {
+    text-decoration: none;
+    /* Eliminamos la decoración de los enlaces, añadiendo sobriedad */
+    color: black;
+    /* Color negro al texto de los enlaces, añadiendo sobriedad */
+
+
+}
+
+#flexNav ul li a:hover {
+
+    color: peru;
+    /* Cambio de color al posicionarse sobre el elemento */
+    text-decoration: underline;
+    /* Subarayado al selecionar  */
+
+
+}
+
+#flexNav ul li a:active{
+    color: red;
+    /* Cambio de color mientras se pulsa sobre el elemento */
+
+}
+
+
+#mainContainer {
+
+    margin-top: 100px;
+    /* Margen superior para evitar el navBar fixed */
+    display: flex;
+    /* Disposición de contenedor flexible */
+    width: 100%;
+    /* Asignando el tamaño del navegador (todo el ancho) */
+
+}
+
+#text {
+
+    align-self: center;
+    /* Centrado en relación a su padre (mainContainer) */
+    width: 50%;
+    /* Limitando a la mitad de la página el ancho del div */
+    margin: auto;
+
+
+}
+
+#text h2 {
+    font-size: 26px;
+    /* Cambiando el tamaño de fuente del h3 */
+    text-align: center;
+    /* Alineando el texto al centro del div */
+}
+
+#text p {
+    font-size: 18px;
+    /* Cambiando el tamaño de la fuente del párrafo */
+    text-align: justify;
+    /* Texto completamente justificado para que mantenga una forma de cuadrado */
+    line-height: 30px
+    /* Añadiendo un mayor interlineado, que queda muy profesional :) */
+
+}
+
+#media {
+
+    padding-top: 80px;
+    /* Añadiendo relleno superior para espaciar respecto al texto */
+    width: 60%;
+    /* Delimitando el ancho de la lista en relacion al body */
+    margin: auto;
+    /* Centrando el elemento mediante márgenes automáticos */
+    text-align: center;
+    /* Centrando los elementos hijos del div */
+    padding-bottom: 50px;
+    /* Añadiendo relleno inferior respecto al final de página */
+
+}
+
+#media ul {
+
+    list-style: none;
+    /* Quitando los puntos de las listas para añadir sobriedad */
+
+}
+
+#media ul li {
+
+    margin-right: 10%;
+    /* Separando los iconos de las redes sociales */
+    display: inline-flex;
+    /* Mostrando en líena los elementos de la lista */
+
+}
+
+#media img[src] {
+    width: 100px;
+    /* Asignando el ancho del icono */
+    height: 70px;
+    /* Asignando la altura del icono */
+
+}
+
+
+@keyframes zoom {
+    0% {
+        width: 100px;
+        height: 70px;
+    }
+    25% {
+        width: 110px;
+        height: 80px;
+    }
+    50% {
+        width: 115px;
+        height: 85px;
+    }
+    100% {
+        width: 125px;
+        height: 95px;
+    }
+    /* Creando una aniamción (zoom) y marcando los tamaños por cada porcentaje de ejecución de la misma */
+}
+
+#media img[src]:hover {
+
+    animation-name: zoom;
+    /* Nombre de la animación que se va a ejecutar */
+    animation-duration: 0.5s;
+    /* Duración de la animación */
+    animation-fill-mode: forwards;
+    /* Estableciendo que una vez terminada no vuelva a los valores iniciales de tamaño, que mantenga los del final de la animación */
+
+
+}
+
+
+/* -----------------------------------------------------FORMULARIO-------------------------------------------------------------------------- */
+
+
+#formContainer {
+
+    width: 100%;
+    /* Estableciendo anchura del div */
+    padding-top: 7%;
+    /* Espaciado respecto al límite superior de la página */
+}
+
+#formContainer h2 {
+
+    text-align: center;
+    /* Centrando el título del formulario */
+    font-size: 26px;
+    /* Cambiando el tamaño de fuente del h3 */
+}
+
+
+form {
+
+    font-size: 18px;
+    /* Adaptando el tamaño de fuente del form */
+    width: 30%;
+    /* Ajustando el ancho del formulario en total */
+    margin: auto;
+    /* Añadiendo márgenes automáticos para centrar en el body */
+    padding-bottom: 40px;
+    /*Añade espacio inferior*/
+}
+
+input {
+
+    border-radius: 5px;
+    /*Redondeando los bordes*/
+    height: 40px;
+    /*Aumentando el tamaño de los inputs*/
+    display: inline-block;
+    /* Alineando los inputs, tomándolos como elementos de bloque */
+    width: 100%;
+    /* Estableciendo el ancho de los inputs en relación al padre (div) */
+    margin: auto;
+    /* Al ser elementos de bloque, los inputs pueden ser centrados con márgenes */
+    box-sizing: border-box;
+    /* Ajustando los inputs al contenido de la caja (div) que los contiene*/
+    border: 1px solid grey;
+    /* Modificando un poco los bordes */
+    margin-bottom: 20px;
+    /* Márgenes inferiores de los inputs (diferente a auto)*/
+    margin-top: 4px;
+    /* Márgenes superiores de los inputs (diferente a auto) */
+}
+
+input[type="submit"] {
+
+    background-color: peru;
+    /* Añadiendo color de fondo */
+    padding: 2px 10px 2px 10px;
+    /* Añadiendo padding (shorthand) */
+    margin-top: 10px;
+    /* Margen superior del botón */
+    border: 5px solid peru;
+    /* Borde del botón */
+    border-radius: 5px;
+    /* Borde redondeado */
+    width: 20%;
+    /* Ancho del botón */
+}
+
+
+/* -----------------------------------------------------PROYECTOS-------------------------------------------------------------------------- */
+
+table {
+
+    width: 50%;
+    /* Tamaño de la tabla */
+    border-spacing: 60px;
+    /* Espacio entre bordes */
+    border-collapse: collapse;
+    /* Qué hacer en colapso de bordes  */
+    margin: auto;
+    /* Centrando la tabla con respecto a su contenedor (div) */
+    margin-top: 60px;
+    /* Añadiendo margen superior */
+}
+
+table td {
+    text-align: center;
+    /* Centrando el texto de cada uno de los tds */
+    padding-bottom: 30px;
+    /* Añadiendo relleno inferior */
+
+}
+
+table tr td img {
+    width: 40px;
+    /* Ancho del icono */
+    height: 40px;
+    /* Largo del icono */
+}
+
+.number {
+    font-size: 20px;
+    /*Cambiando tamaño de los números para destacarlos*/
+    font-weight: bold;
+    /*Destacandolos en negrita*/
+
+}
+
+#footer{
+
+    width: 100%;
+    /*Asignado el tamaño del footer*/
+    margin: auto;
+    /*Añadiéndole márgenes al footer*/
+    text-align: center;
+    /*Centrando el contenido del footer*/
+
+}
+
+footer p::after{
+    content: "   ---  2020";
+
+}
+footer p::before{
+
+    content: "   Derechos reservados  ----   ";
+}
+
+
+
+

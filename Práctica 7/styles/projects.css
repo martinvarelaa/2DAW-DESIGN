@@ -1,0 +1,14 @@
+
+/*Asigando tamaño a todas las imágenes de proyecto*/
+.projectImg{
+
+    width: 100px;
+    height: 100px;
+
+}
+/*Asignando tamaño a todos los icónos que hay en los proyectos referentes a las tecnologías utilizadas en cada uno*/
+.projectLanguageIcon{
+    width: 30px;
+    height: 30px;
+    
+}
